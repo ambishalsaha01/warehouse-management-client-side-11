@@ -7,6 +7,7 @@
 .footer-container img{
     width: 200px;
     height: 120px;
+    margin-bottom: 20px;
 }
 
 .footer-title{
@@ -44,4 +45,11 @@
 
 .footer-container .contact-item ul li{
     line-height: 30px;
+}
+
+.copyright-item{
+    background-color: #293744;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
 }
