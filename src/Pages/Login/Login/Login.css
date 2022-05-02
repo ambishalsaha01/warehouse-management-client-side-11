@@ -1,0 +1,26 @@
+.login-form{
+    margin: 100px 0;
+    padding: 30px;
+    width: 550px;
+    background-color: #fff;
+    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.499);
+    border-radius: 10px;
+}
+
+.login-title{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.submit-btn{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffd32a;
+    border: 0;
+}
+
+.submit-btn:hover{
+    background-color: #d6af12;
+}

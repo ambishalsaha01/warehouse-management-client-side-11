@@ -7,16 +7,16 @@ const Footer = () => {
     return (
         <div>
             <div className="footer-container">
-                <div class="container footer-item">
-                    <div class="row gy-3">
-                        <div class="col-3">
-                            <div class="p-3">
+                <div className="container footer-item">
+                    <div className="row gy-3">
+                        <div className="col-3">
+                            <div>
                                 <img src={logo} alt="footer-logo" />
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis veritatis tenetur modi, ipsam itaque nesciunt odit natus exercitationem? Iusto architecto ad rerum aperiam sed?</p>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="p-3">
+                        <div className="col-3">
+                            <div>
                                 <h3 className='footer-title'>QUICK LINKS</h3>
                                 <div className="quick-link">
                                     <ul>
@@ -29,8 +29,8 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="p-3">
+                        <div className="col-3">
+                            <div>
                                 <h3 className='footer-title'>SERVICE OFFERS</h3>
                                 <div className="services-offer">
                                     <ul>
@@ -44,8 +44,8 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="p-3">
+                        <div className="col-3">
+                            <div>
                                 <h3 className='footer-title'>Contact US</h3>
                                 <address className='contact-item'>
                                     <ul>
