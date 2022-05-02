@@ -1,4 +1,4 @@
-.login-form{
+.register-form{
     margin: 100px 0;
     padding: 30px;
     width: 550px;
@@ -7,21 +7,33 @@
     border-radius: 10px;
 }
 
-.login-title{
+.register-title{
     font-size: 26px;
     margin-bottom: 20px;
 }
 
-.submit-btn{
+.register-form input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ded7d7;
+    border-radius: 10px;
+}
+
+.register-btn{
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
     font-size: 16px;
+    color: #fff;
     background-color: #ffd32a;
     border: 0;
     border-radius: 10px;
 }
 
-.submit-btn:hover{
+.register-btn:hover{
     background-color: #d6af12;
 }
