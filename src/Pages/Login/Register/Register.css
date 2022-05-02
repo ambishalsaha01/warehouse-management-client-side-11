@@ -12,6 +12,10 @@
     margin-bottom: 20px;
 }
 
+.register-form input:focus{
+    outline: 0;
+}
+
 .register-form input{
     display: block;
     width: 100%;
