@@ -1,0 +1,21 @@
+.login-container{
+    margin: 15px 0;
+}
+
+.google-login-btn,
+.github-login-btn{
+    display: block;
+    width: 100%;
+    background-color: #eb2f06;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.github-login-btn{
+    background-color: #2f3640;
+}
+
+.google-login-btn:hover,
+.github-login-btn:hover{
+    color: #fff;
+}
