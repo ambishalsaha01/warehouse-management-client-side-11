@@ -12,7 +12,7 @@ const Footer = () => {
                         <div className="col-3">
                             <div>
                                 <img src={logo} alt="footer-logo" />
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis veritatis tenetur modi, ipsam itaque nesciunt odit natus exercitationem? Iusto architecto ad rerum aperiam sed?</p>
+                                <p>An inventory management system (or inventory system) is the process by which you track your goods throughout your entire supply chain, from purchasing to production to end sales.</p>
                             </div>
                         </div>
                         <div className="col-3">

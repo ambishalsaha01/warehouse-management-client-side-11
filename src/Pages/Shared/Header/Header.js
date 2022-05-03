@@ -32,9 +32,9 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>LogOut</button>
+                                <button style={{backgroundColor: '#fff', color: '#222', borderRadius: '5px', padding: '10px'}} className='logout-btn btn btn-link text-decoration-none' onClick={handleSignOut}>LogOut</button>
                                 :
-                                <Nav.Link as={Link} to="login">Login</Nav.Link>
+                                <Nav.Link style={{backgroundColor: '#fff', color: '#222', borderRadius: '5px', padding: '10px'}} className='login-btn' as={Link} to="login">LogIn</Nav.Link>
                             }
                         </Nav>
                     </Navbar.Collapse>
