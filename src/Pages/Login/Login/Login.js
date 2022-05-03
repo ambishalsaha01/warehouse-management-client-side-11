@@ -1,65 +1,13 @@
-// import React, { useRef } from 'react';
-// import { Button, Form } from 'react-bootstrap';
-// import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-// import { Link, useLocation, useNavigate } from 'react-router-dom';
-// import auth from '../../../firebase.init';
-// import './Login.css'
-
-// const Login = () => {
-//     const emailRef = useRef('');
-//     const passwordRef = useRef('');
-//     const location = useLocation();
-//     const navigate = useNavigate();
-
-//     let from = location.state?.from?.pathname || "/";
-
-//     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
-
-//     if(user){
-//         navigate(from, { replace: true });
-//     }
-
-//     const handleSubmit = event => {
-//         event.preventDefault();
-//         const email = emailRef.current.value;
-//         const password = passwordRef.current.value;
-//         signInWithEmailAndPassword(email, password);
-//     }
-
-//     const navigateRegister = event => {
-//         navigate('/register');
-//     }
-
-//     return (
-//         <div className='container mx-auto login-form'>
-//             <h2 className='login-title text-center mt-2'>Login Here</h2>
-//             <Form onSubmit={handleSubmit}>
-//                 <Form.Group className="mb-3" controlId="formBasicEmail">
-//                     <Form.Label>Email Address:</Form.Label>
-//                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-//                 </Form.Group>
-//                 <Form.Group className="mb-3" controlId="formBasicPassword">
-//                     <Form.Label>Password:</Form.Label>
-//                     <Form.Control ref={passwordRef} type="password" placeholder="Enter Password" required />
-//                 </Form.Group>
-//                 <Button className='submit-btn' type="submit">
-//                     Login
-//                 </Button>
-//             </Form>
-//             <p className='text-center'>Not a member? <Link to="/register" className='text-warning text-decoration-none' onClick={navigateRegister}>Register Now.</Link> </p>
-//         </div>
-//     );
-// };
-
-// export default Login;
-
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -68,10 +16,20 @@ const Login = () => {
     const location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
+    let errorElement;
 
     const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth)
 
-    if (user) {
+    if(loading || sending){
+        return <Loading></Loading>
+    }
+
+    if(error){
+        errorElement = <p className='text-warning'>Error: {error?.message}</p>
+    }
+
+    if(user){
         navigate(from, { replace: true });
     }
 
@@ -86,6 +44,17 @@ const Login = () => {
         navigate('/register');
     }
 
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if(email){
+            await sendPasswordResetEmail(email)
+            toast('Email Sent Successfully')
+        }
+        else{
+            toast('Please Enter Your Email')
+        }
+    }
+
     return (
         <div className='login-form mx-auto'>
             <h2 className='text-center mt-2'>Login Here</h2>
@@ -97,11 +66,14 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Enter Password" required />
                 </Form.Group>
+                {errorElement}
                 <Button className='submit-btn' type="submit">
                     Login Now
                 </Button>
             </Form>
-            <p className='text-center'>Not a member? <Link to="/register" className='text-warning text-decoration-none' onClick={navigateRegister}>Register Now</Link> </p>
+            <p className='text-center'>Not a member? <Link to="/register" className='text-warning text-decoration-none' onClick={navigateRegister}>Register Now.</Link> </p>
+            <p className='text-center'>Forgoted Password? <button className='btn btn-link text-warning text-decoration-none' onClick={resetPassword}>Reset Your Password</button></p>
+            <ToastContainer />
         </div>
     );
 };

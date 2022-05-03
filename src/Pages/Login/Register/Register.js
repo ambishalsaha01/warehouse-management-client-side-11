@@ -7,7 +7,7 @@ import './Register.css';
 
 const Register = () => {
     const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
-    const [updateProfile, updating] = useUpdateProfile(auth);
+    const [updateProfile, updating, error1] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
 

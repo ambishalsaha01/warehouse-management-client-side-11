@@ -19,7 +19,7 @@ const SocialLogin = () => {
     }
 
     if (error || error1) {
-        errorElement = <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
+        errorElement = <p className='text-warning'>Error: {error?.message} {error1?.message}</p>
     }
 
     if (user || user1) {
@@ -28,7 +28,6 @@ const SocialLogin = () => {
 
     return (
         <div className='social-login'>
-            {errorElement}
             <div className='login-container'>
                 <button onClick={() => signInWithGoogle()} className='btn google-login-btn'>
                     <img style={{ width: '30px' }} src={google} alt="" />
@@ -39,6 +38,7 @@ const SocialLogin = () => {
                     <span className='px-2'>SignIn With GitHub</span>
                 </button>
             </div>
+            {errorElement}
             <div className='d-flex align-items-center my-3'>
                 <div style={{ height: '1px' }} className='bg-warning w-50'></div>
                 <h4 className='px-2'>OR</h4>
