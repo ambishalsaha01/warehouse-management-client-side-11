@@ -26,12 +26,13 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link href="home#services">Services</Nav.Link>
                             <Nav.Link href="home#faq">Faq</Nav.Link>
+                            <Nav.Link href="home#member">Member</Nav.Link>
                             <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                         </Nav>
                         <Nav>
                             {
                                 user ?
-                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>LogOut</button>
                                 :
                                 <Nav.Link as={Link} to="login">Login</Nav.Link>
                             }

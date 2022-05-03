@@ -1,0 +1,82 @@
+[
+    {
+        "productName": "Asus Vivobook",
+        "price": 40000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-x515ma/vivobook-x515ma-01-500x500.jpg",
+        "quantity": 4,
+        "suplierName": "Deleon Cobb"
+    },
+    {
+        "productName": "Chuwi HeroBook",
+        "price": 30000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/chuwi/herobook/herobook-pro/herobook-pro-1-500x500.jpg",
+        "quantity": 6,
+        "suplierName": "Chaney Dennis"
+    },
+    {
+        "productName": "Havit KB329 Keyboard",
+        "price": 450,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/keyboard/havit/kb329/hv-kb329-3-500x500.jpg",
+        "quantity": 9,
+        "suplierName": "Eugenia Carlson"
+    },
+    {
+        "productName": "Xtreme K911 Keyboard",
+        "price": 500,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/keyboard/xtreme/k911/k911-01-500x500.jpg",
+        "quantity": 15,
+        "suplierName": "Robin Wong"
+    },
+    {
+        "productName": "TX3 Mini-A Android",
+        "price": 2500,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/tv-box/tx3/tx3-mini-a/tx3-mini-a-0001-500x500.jpg",
+        "quantity": 20,
+        "suplierName": "Patrice Guzman"
+    },
+    {
+        "productName": "Gadmei TV2836E",
+        "price": 3000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/tv-card/gadmei/tv2836e/tv2836e-01-500x500.jpg",
+        "quantity": 34,
+        "suplierName": "Deleon Cobb"
+    },
+    {
+        "productName": "Starex 24NB",
+        "price": 21000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/television/starex/24nb/24nb-500x500.jpg",
+        "quantity": 11,
+        "suplierName": "Chaney Dennis"
+    },
+    {
+        "productName": "Asus RT-AC1200",
+        "price": 4000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/networking/router/asus/ac1200-v2/ac1200-v2-1-500x500.jpg",
+        "quantity": 15,
+        "suplierName": "Eugenia Carlson"
+    },
+    {
+        "productName": "Micronet SP214EL 4-PORT",
+        "price": 2000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/KVM%20Switch/Micronet%20SP214EL-500x500.jpg",
+        "quantity": 7,
+        "suplierName": "Robin Wong"
+    },
+    {
+        "productName": "Cheerlux C8 1800 Lumens",
+        "price": 10000,
+        "description": "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently",
+        "img": "https://www.startech.com.bd/image/cache/catalog/projector/cheerlux/c8-1800-lumens-wi-fi/cheerlux-c8-wifi-01-500x500.jpg",
+        "quantity": 5,
+        "suplierName": "Patrice Guzman"
+    }
+]

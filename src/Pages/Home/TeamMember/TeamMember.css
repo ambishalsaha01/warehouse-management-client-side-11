@@ -1,0 +1,21 @@
+#member{
+    margin-bottom: 50px;
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.team-member{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffd32a;
+}
+
+.team-member img{
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
