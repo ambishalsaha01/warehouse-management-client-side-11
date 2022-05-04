@@ -10,3 +10,9 @@
     padding: 30px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 480px){
+    .blogs-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

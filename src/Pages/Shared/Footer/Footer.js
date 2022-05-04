@@ -9,13 +9,13 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="container footer-item">
                     <div className="row gy-3">
-                        <div className="col-3">
+                        <div className="col-md-6 col-lg-3">
                             <div>
                                 <img src={logo} alt="footer-logo" />
                                 <p>An inventory management system (or inventory system) is the process by which you track your goods throughout your entire supply chain, from purchasing to production to end sales.</p>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-6 col-lg-3">
                             <div>
                                 <h3 className='footer-title'>QUICK LINKS</h3>
                                 <div className="quick-link">
@@ -29,7 +29,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-6 col-lg-3">
                             <div>
                                 <h3 className='footer-title'>SERVICE OFFERS</h3>
                                 <div className="services-offer">
@@ -44,7 +44,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-6 col-lg-3">
                             <div>
                                 <h3 className='footer-title'>Contact US</h3>
                                 <address className='contact-item'>

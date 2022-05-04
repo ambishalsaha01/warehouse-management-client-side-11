@@ -1,8 +1,15 @@
 import React from 'react';
-import './Service.css'
+import { useNavigate } from 'react-router-dom';
+import './Inventory.css'
 
-const Service = ({service}) => {
-    const {productName, price, img, description, quantity, suplierName} = service;
+const Inventory = ({inventory}) => {
+    const {_id, productName, price, img, description, quantity, suplierName} = inventory;
+    const navigate = useNavigate();
+
+    const navigateToInventoryDetail = id => {
+        navigate(`/inventory/${id}`);
+    }
+
     return (
         <div className='service'>
             <img className='w-100' src={img} alt="service-img" />
@@ -12,10 +19,10 @@ const Service = ({service}) => {
             <p>Quantity: <small>{quantity}</small></p>
             <p>SuplierName: <small>{suplierName}</small></p>
             <div className='manage-button'>
-                <button className='manage-btn'>Manage Item</button>
+                <button onClick={()=> navigateToInventoryDetail(_id)} className='manage-btn'>Manage Item</button>
             </div>
         </div>
     );
 };
 
-export default Service;
+export default Inventory;

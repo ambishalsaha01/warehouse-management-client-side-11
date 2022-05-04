@@ -1,14 +1,14 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Faq from '../Faq/Faq';
-import Services from '../Services/Services';
+import Inventories from '../Services/Inventories';
 import TeamMember from '../TeamMember/TeamMember';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Services></Services>
+            <Inventories></Inventories>
             <TeamMember></TeamMember>
             <Faq></Faq>
         </div>

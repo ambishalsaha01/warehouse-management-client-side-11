@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
 const GetDbService = () => {
-    const [services, setService] = useState([]);
+    const [inventories, setInventories] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/service/')
+        fetch('http://localhost:5000/inventory/')
         .then(res => res.json())
-        .then(data => setService(data))
+        .then(data => setInventories(data))
     }, [])
-    return [services, setService]
+    return [inventories, setInventories]
 };
 
 export default GetDbService;

@@ -1,7 +1,7 @@
 .register-form{
     margin: 100px 0;
     padding: 30px;
-    width: 550px;
+    max-width: 550px;
     background-color: #fff;
     box-shadow: 0 0 5px  rgba(0, 0, 0, 0.499);
     border-radius: 10px;
@@ -41,4 +41,12 @@
 .register-btn:hover{
     background-color: #d6af12;
     color: #fff;
+}
+
+@media screen and (max-width: 480px){
+    .register-form{
+        margin: 50px 50px;
+        padding: 20px;
+        max-width: 380px;
+    }
 }

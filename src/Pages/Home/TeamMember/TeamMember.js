@@ -1,8 +1,8 @@
 import React from 'react';
-import member1 from '../../../images/team_member/member1.jpg'
-import member2 from '../../../images/team_member/member2.jpg'
-import member3 from '../../../images/team_member/member3.jpg'
-import './TeamMember.css'
+import member1 from '../../../images/team_member/member1.jpg';
+import member2 from '../../../images/team_member/member2.jpg';
+import member3 from '../../../images/team_member/member3.jpg';
+import './TeamMember.css';
 
 const TeamMember = () => {
     return (
