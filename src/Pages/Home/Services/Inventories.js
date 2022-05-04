@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GetDbService from '../../../Hooks/GetDbService';
 import Inventory from '../Service/Inventory';
 import './Inventories.css'
@@ -16,6 +17,9 @@ const Inventories = () => {
                             inventory={inventory}
                         ></Inventory>)
                     }
+                </div>
+                <div className='more-inventories text-center'>
+                    <Link className='inventories-btn' to='/manageinventories'>Manage Inventories</Link>
                 </div>
             </div>
         </div>

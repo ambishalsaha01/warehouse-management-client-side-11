@@ -8,6 +8,8 @@ import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import './App.css';
 import InventoryDetails from './Pages/Home/InventoryDetails/InventoryDetails';
+import ManageInventories from './Pages/ManageInventories/ManageInventories';
+import AddInventories from './Pages/AddInventories/AddInventories';
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path=''></Route>
+        <Route path='/manageinventories' element={<ManageInventories></ManageInventories>}></Route>
+        <Route path='/addinventories' element={<AddInventories></AddInventories>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
