@@ -34,12 +34,12 @@ const InventoryDetails = () => {
                 </div>
                 <div className="inventory-detail-items1 text-center">
                     <h2>Restock The Item</h2>
-                    <form className='mt-3'>
+                    <form className='mt-3 add-form'>
                         <input type="text" />
-                        <button>Add Quantity</button>
+                        <button className='add-btn'>Add Quantity</button>
                         <br />
-                        <div className='more-inventories text-center'>
-                            <Link className='inventories-btn' to='/manageinventories'>Manage Inventories</Link>
+                        <div className='more-inventories mt-4 text-center'>
+                            <Link className='bg-dark text-white p-2 text-decoration-none rounded' to='/manageinventories'>Manage Inventories</Link>
                         </div>
                     </form>
                 </div>

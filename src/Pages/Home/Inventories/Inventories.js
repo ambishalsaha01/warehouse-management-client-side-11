@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GetDbService from '../../../Hooks/GetDbService';
-import Inventory from '../Service/Inventory';
+import Inventory from '../Inventory/Inventory';
 import './Inventories.css'
 
 const Inventories = () => {
@@ -19,7 +19,7 @@ const Inventories = () => {
                     }
                 </div>
                 <div className='more-inventories text-center'>
-                    <Link className='inventories-btn' to='/manageinventories'>Manage Inventories</Link>
+                    <Link className='bg-dark text-white p-2 text-decoration-none rounded' to='/manageinventories'>Manage Inventories</Link>
                 </div>
             </div>
         </div>

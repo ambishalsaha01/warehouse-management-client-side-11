@@ -17,17 +17,17 @@ const AddInventories = () => {
             .then(result => { console.log(result) })
     };
     return (
-        <div className='container'>
+        <div className='add-inventory mx-auto'>
             <h2 className='text-center my-3'>Add Your Inventories</h2>
             <div className="add-inventory-container">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input placeholder='Enter product name' type="product Name" {...register("productName", { required: true })} />
-                    <textarea type="description" {...register("description")} />
-                    <input type="price" {...register("price")} />
-                    <input type="quantity" {...register("quantity")} />
-                    <input type="img url" {...register("img")} />
-                    <input type="suplierName" {...register("suplierName")} />
-                    <input value='Add Inventories' type="submit" />
+                    <textarea placeholder='Enter description' type="description" {...register("description")} />
+                    <input placeholder='Enter price' type="price" {...register("price")} />
+                    <input placeholder='Enter quantity' type="quantity" {...register("quantity")} />
+                    <input placeholder='Enter image url' type="img url" {...register("img")} />
+                    <input placeholder='Enter suplier name' type="suplierName" {...register("suplierName")} />
+                    <input className='bg-dark text-white' value='Add Inventories' type="submit" />
                 </form>
             </div>
         </div>
