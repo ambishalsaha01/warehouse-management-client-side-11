@@ -18,6 +18,7 @@ const ManageInventories = () => {
                             inventories.map(inventory => <ManageInventory
                                 key={inventory._id}
                                 inventory={inventory}
+                                ui={{inventories, setInventories}}
                             ></ManageInventory>)
                         }
                     </div>

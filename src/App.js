@@ -6,10 +6,11 @@ import Register from './Pages/Login/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
-import './App.css';
 import InventoryDetails from './Pages/Home/InventoryDetails/InventoryDetails';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import AddInventories from './Pages/AddInventories/AddInventories';
+import './App.css';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/inventory/:inventoryId' element={<InventoryDetails></InventoryDetails>}></Route>
+        <Route path='/inventory/:inventoryId' element={
+          <RequireAuth>
+            <InventoryDetails></InventoryDetails>
+          </RequireAuth>
+        }></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

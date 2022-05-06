@@ -16,8 +16,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Simplifying the Idea-to-Deployment Process</h3>
+                        <p>Personas, Roadmaps and everything for product management.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -28,8 +28,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>World's first native Product Management app for mission-driven teams</h3>
+                        <p>Provide details, share action items, and keep the team in sync in real time.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -40,8 +40,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Manage your Roadmap</h3>
+                        <p>Focus on outcome and impact, not product backlog.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
