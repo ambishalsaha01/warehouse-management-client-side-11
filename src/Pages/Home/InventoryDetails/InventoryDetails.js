@@ -7,7 +7,7 @@ const InventoryDetails = () => {
 
     const [inventory, setInventory] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${inventoryId}`
+        const url = `https://cryptic-wildwood-92945.herokuapp.com/inventory/${inventoryId}`
         console.log(url)
         fetch(url)
             .then(res => res.json())
@@ -20,7 +20,7 @@ const InventoryDetails = () => {
         const oldquantity = parseInt(quantity);
         const totalQuantity = oldquantity - 1;
         const updatedStock = { totalQuantity };
-        const url = `http://localhost:5000/inventory/${inventoryId}`
+        const url = `https://cryptic-wildwood-92945.herokuapp.com/inventory/${inventoryId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -42,7 +42,7 @@ const InventoryDetails = () => {
         const restockquantity = parseInt(event.target.quantity.value);
         const totalQuantity = oldquantity + restockquantity;
         const updatedStock = { totalQuantity };
-        const url = `http://localhost:5000/inventory/${inventoryId}`;
+        const url = `https://cryptic-wildwood-92945.herokuapp.com/inventory/${inventoryId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -8,7 +8,7 @@ const ManageInventory = ({ inventory, ui }) => {
     const handleDeleteInventory = id => {
         const confirmDelete = window.confirm('Are you sure?')
         if (confirmDelete) {
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://cryptic-wildwood-92945.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE',
             })
